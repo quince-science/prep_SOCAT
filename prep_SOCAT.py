@@ -265,7 +265,6 @@ def write_header(tsv_file, xml_data):
 
 # Check if the folder exists and create it if not
 #
-<<<<<<< HEAD
 def make_folder(folder):
     if (folder != '') & (folder != '.'):
         if not os.path.isdir(folder):
@@ -276,7 +275,6 @@ def make_folder(folder):
                 sys.exit(3)
                 
 # Move the SOCAT tsv and xml files to the output folder.
-=======
 def repack_preclean(tmp_folder):
     try:
         # Standardize paths to prevent slash mismatches
@@ -307,7 +305,6 @@ def repack_preclean(tmp_folder):
         sys.exit(5)
 
 # Recompress the data into a zip ready for upload.
->>>>>>> origin/master
 #
 def move_to_output(tsv_file, xml_file, out_folder):
     # Ensure the output folder exists before moving files into it
